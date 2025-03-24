@@ -467,6 +467,12 @@
   .w-44 {
     width: calc(var(--spacing) * 44);
   }
+  .w-\[400\] {
+    width: 400;
+  }
+  .w-\[400px\] {
+    width: 400px;
+  }
   .w-screen {
     width: 100vw;
   }
