@@ -337,12 +337,6 @@
       max-width: 96rem !important;
     }
   }
-  .-m-20 {
-    margin: calc(var(--spacing) * -20);
-  }
-  .m-20 {
-    margin: calc(var(--spacing) * 20);
-  }
   .box-border {
     box-sizing: border-box;
   }
@@ -444,9 +438,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1265,9 +1256,6 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
   }
   .text-center {
     text-align: center;
