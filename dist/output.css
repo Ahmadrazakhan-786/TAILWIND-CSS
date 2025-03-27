@@ -13,6 +13,7 @@
     --color-sky-500: oklch(0.685 0.169 237.323);
     --color-blue-400: oklch(0.707 0.165 254.624);
     --color-fuchsia-500: oklch(0.667 0.295 322.15);
+    --color-pink-600: oklch(0.592 0.249 0.584);
     --spacing: 0.25rem;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
@@ -1821,6 +1822,13 @@
   }
   .transform-view {
     transform-box: view-box;
+  }
+  .hover\:text-pink-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-pink-600);
+      }
+    }
   }
   .md\:text-blue-400 {
     @media (width >= 48rem) {
