@@ -9,6 +9,7 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-600: oklch(0.577 0.245 27.325);
     --color-orange-500: oklch(0.705 0.213 47.604);
+    --color-amber-300: oklch(0.879 0.169 91.605);
     --color-green-50: oklch(0.982 0.018 155.826);
     --color-green-500: oklch(0.723 0.219 149.579);
     --color-emerald-300: oklch(0.845 0.143 164.978);
@@ -27,7 +28,6 @@
     --color-rose-400: oklch(0.712 0.194 13.428);
     --color-slate-950: oklch(0.129 0.042 264.695);
     --color-gray-50: oklch(0.985 0.002 247.839);
-    --color-gray-300: oklch(0.872 0.01 258.338);
     --color-gray-400: oklch(0.707 0.022 261.325);
     --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-600: oklch(0.446 0.03 256.802);
@@ -396,8 +396,14 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-\[15\] {
+    margin-top: 15;
   }
   .-mb-10 {
     margin-bottom: calc(var(--spacing) * -10);
@@ -560,6 +566,9 @@
   .w-screen {
     width: 100vw;
   }
+  .max-w-6 {
+    max-width: calc(var(--spacing) * 6);
+  }
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
@@ -674,12 +683,6 @@
   }
   .-rotate-\[2deg\] {
     rotate: calc(2deg * -1);
-  }
-  .rotate-\[2de\] {
-    rotate: 2de;
-  }
-  .rotate-\[2deg\] {
-    rotate: 2deg;
   }
   .rotate-none {
     rotate: none;
@@ -1221,9 +1224,6 @@
     --tw-border-style: solid;
     border-style: solid;
   }
-  .border-gray-300 {
-    border-color: var(--color-gray-300);
-  }
   .border-gray-400 {
     border-color: var(--color-gray-400);
   }
@@ -1232,9 +1232,6 @@
   }
   .border-gray-600 {
     border-color: var(--color-gray-600);
-  }
-  .border-neutral-50 {
-    border-color: var(--color-neutral-50);
   }
   .border-neutral-300 {
     border-color: var(--color-neutral-300);
@@ -1268,9 +1265,6 @@
   }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
-  }
-  .bg-gray-400 {
-    background-color: var(--color-gray-400);
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
@@ -1555,6 +1549,9 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -1711,6 +1708,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-amber-300 {
+    color: var(--color-amber-300);
   }
   .text-black {
     color: var(--color-black);
