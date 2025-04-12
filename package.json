@@ -1,8 +1,4 @@
 {
-  "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "deploy": "npm run build && rm -rf docs && mkdir docs && cp -r dist/* docs/"
-  },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.15",
     "tailwindcss": "^4.0.15"
